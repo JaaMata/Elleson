@@ -1,0 +1,130 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas: "nav nav nav"
+    "title title title"
+    "about skills mission";
+}
+
+p {
+  font-family: Montserrat;
+}
+
+:root {
+  font-size: 16px;
+}
+
+.nav-bar {
+  grid-area: nav;
+}
+
+.title {
+  grid-area: title;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative
+}
+
+.title img {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.title h1 {
+  position: absolute;
+  top: 250px;
+  font-size: 8em;
+  font-family: Roboto;
+  color: white;
+}
+
+.title p {
+  position: absolute;
+  top: 450px;
+  font-size: 2em;
+  font-family: Roboto;
+  color: white;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  grid-area: about;
+  position: relative;
+}
+
+.about h2 {
+  position: absolute;
+  margin-top: 20px;
+  font-size: 2.5em;
+  font-family: Roboto;
+}
+
+.about p {
+  position: absolute;
+  top: 60px;
+  margin-left: 10px;
+  font-size: 2em;
+}
+
+.skills {
+  grid-area: skills;
+  position: relative;
+}
+
+.skills h2 {
+  position: absolute;
+  margin-top: 20px;
+  font-size: 2.5em;
+  left: 50%;
+  right: 50%;
+  font-family: Roboto;
+}
+
+.first-skill {
+  display: flex;
+  align-items: center;
+}
+
+.first-skill img {
+  margin-top: 100px;
+  float: left;
+  max-width: 25%;
+  max-height: 12.5%;
+}
+
+.first-skill p {
+  float: left;
+  flex-basis: 80%;
+  padding-top: 15%;
+  padding-left: 2%;
+  font-size: 1.5em;
+}
+
+.second-skill {
+  display: flex;
+  align-items: center;
+}
+
+.second-skill img {
+  margin-top: 100px;
+  float: left;
+  max-width: 25%;
+  max-height: 12.5%;
+}
+
+.second-skill p {
+  float: left;
+  flex-basis: 80%;
+  padding-top: 15%;
+  padding-left: 2%;
+  font-size: 1.5em;
+}
+
+.mission {
+  grid-area: mission;
+}
