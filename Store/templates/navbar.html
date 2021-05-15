@@ -1,0 +1,63 @@
+{% load static %}
+<div class="nav-bar">
+  <ul>
+    <li><a class="text-links" href="#">Products</a></li>
+    <li><a href="#"><img class="logo" src="{% static 'images/logo.png' %}" alt="Ellson logo"></a></li>
+    <li><a class="text-links" href="#">Contact Us</a></li>
+  </ul>
+</div>
+<hr>
+
+
+<style>
+  body {
+    margin: 0;
+  }
+
+  hr {
+    border: 1px solid gray;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+
+  .logo {
+    height: auto;
+    width: 300px;
+
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  li {
+    display: inline;
+    float: left;
+
+  }
+
+  a {
+    display: block;
+    padding: 8px;
+    font-size: 40px;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  a:visited {
+    color: black;
+
+  }
+
+  .text-links {
+    margin-top: 15px;
+  }
+</style>
