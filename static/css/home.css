@@ -2,10 +2,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.1fr 1fr 1fr;
-  grid-gap: 20px;
   grid-template-areas: "nav nav nav"
     "title title title"
-    "about skills mission";
+    "info info info";
+  z-index: -2;
+}
+
+body {
+  background-color: #334443;
+  color: #fffbdf;
 }
 
 p {
@@ -18,6 +23,7 @@ p {
 
 .nav-bar {
   grid-area: nav;
+  background-color: white;
 }
 
 .title {
@@ -39,7 +45,6 @@ p {
   top: 250px;
   font-size: 8em;
   font-family: Roboto;
-  color: white;
 }
 
 .title p {
@@ -47,7 +52,17 @@ p {
   top: 450px;
   font-size: 2em;
   font-family: Roboto;
-  color: white;
+}
+
+.info {
+  grid-area: info;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .3fr .5fr;
+  grid-template-areas:
+    "about about"
+    "skills mission"
+  ;
 }
 
 .about {
@@ -55,6 +70,12 @@ p {
   justify-content: center;
   grid-area: about;
   position: relative;
+  background-color: #34656d;
+  border-radius: 10em;
+  top: 10px;
+  border-right-width: 5px;
+  margin-right: 24px;
+  margin-left: 24px;
 }
 
 .about h2 {
@@ -67,22 +88,29 @@ p {
 .about p {
   position: absolute;
   top: 60px;
-  margin-left: 10px;
-  font-size: 2em;
+  margin-left: 40px;
+  font-size: 1.5em;
 }
 
 .skills {
   grid-area: skills;
   position: relative;
+  background-color: #34656d;
+  border-radius: 10em;
+  top: 20px;
+  border-right-width: 5px;
+  margin-right: 24px;
+  margin-left: 24px;
+  text-align: center;
 }
 
 .skills h2 {
   position: absolute;
   margin-top: 20px;
   font-size: 2.5em;
-  left: 50%;
-  right: 50%;
   font-family: Roboto;
+  left: 47%;
+  right: auto;
 }
 
 .first-skill {
@@ -91,10 +119,11 @@ p {
 }
 
 .first-skill img {
-  margin-top: 100px;
+  margin-top: 10%;
   float: left;
-  max-width: 25%;
+  max-width: 15%;
   max-height: 12.5%;
+  margin-left: 10%;
 }
 
 .first-skill p {
@@ -102,6 +131,7 @@ p {
   flex-basis: 80%;
   padding-top: 15%;
   padding-left: 2%;
+  margin-right: 10%;
   font-size: 1.5em;
 }
 
@@ -111,20 +141,44 @@ p {
 }
 
 .second-skill img {
-  margin-top: 100px;
+  margin-top: 10%;
   float: left;
-  max-width: 25%;
+  max-width: 15%;
   max-height: 12.5%;
+  margin-left: 10%;
 }
 
 .second-skill p {
   float: left;
   flex-basis: 80%;
-  padding-top: 15%;
+  padding-top: 10%;
   padding-left: 2%;
+  margin-right: 10%;
   font-size: 1.5em;
 }
 
 .mission {
+  position: relative;
   grid-area: mission;
+  background-color: #34656d;
+  top: 20px;
+  border-radius: 10em;
+  border-right-width: 5px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.mission h2 {
+  display: flex;
+  margin-top: 20px;
+  font-size: 2.5em;
+  font-family: Roboto;
+  justify-content: center;
+}
+
+.mission p {
+  font-size: 1.5em;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-right: 10%;
 }
