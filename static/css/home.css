@@ -9,12 +9,8 @@
 }
 
 body {
-  background-color: #334443;
-  color: #fffbdf;
-}
-
-p {
-  font-family: Montserrat;
+  color: white;
+  font-family: Roboto;
 }
 
 :root {
@@ -31,7 +27,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative
+  position: relative;
 }
 
 .title img {
@@ -42,23 +38,30 @@ p {
 
 .title h1 {
   position: absolute;
-  top: 250px;
-  font-size: 8em;
-  font-family: Roboto;
+  top: 270px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 84px;
 }
 
 .title p {
   position: absolute;
-  top: 450px;
-  font-size: 2em;
-  font-family: Roboto;
+  width: 389px;
+  height: 28px;
+  top: 400px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #F3F3F3;
 }
 
 .info {
   grid-area: info;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: .3fr .5fr;
+  grid-template-rows: .42fr .5fr;
   grid-template-areas:
     "about about"
     "skills mission"
@@ -67,41 +70,30 @@ p {
 
 .about {
   display: flex;
-  justify-content: center;
   grid-area: about;
   position: relative;
-  background-color: #34656d;
-  border-radius: 10em;
-  top: 10px;
-  border-right-width: 5px;
-  margin-right: 24px;
-  margin-left: 24px;
+  background-color: #242424;
+  justify-content: center;
 }
 
 .about h2 {
   position: absolute;
-  margin-top: 20px;
+  top: 66px;
   font-size: 2.5em;
   font-family: Roboto;
 }
 
 .about p {
   position: absolute;
-  top: 60px;
-  margin-left: 40px;
-  font-size: 1.5em;
+  width: 588.18px;
+  top: 192px;
+  font-size: 24px;
 }
 
 .skills {
   grid-area: skills;
   position: relative;
-  background-color: #34656d;
-  border-radius: 10em;
-  top: 20px;
-  border-right-width: 5px;
-  margin-right: 24px;
-  margin-left: 24px;
-  text-align: center;
+  background-color: #3A3A3A;
 }
 
 .skills h2 {
@@ -119,20 +111,20 @@ p {
 }
 
 .first-skill img {
-  margin-top: 10%;
-  float: left;
+  position: absolute;
   max-width: 15%;
   max-height: 12.5%;
-  margin-left: 10%;
+  left: 50px;
+  top: 200px
 }
 
 .first-skill p {
+  position: absolute;
   float: left;
   flex-basis: 80%;
-  padding-top: 15%;
-  padding-left: 2%;
-  margin-right: 10%;
-  font-size: 1.5em;
+  left: 236px;
+  top: 264px;
+  font-size: 24px;
 }
 
 .second-skill {
@@ -141,20 +133,22 @@ p {
 }
 
 .second-skill img {
-  margin-top: 10%;
-  float: left;
+  position: absolute;
   max-width: 15%;
   max-height: 12.5%;
-  margin-left: 10%;
+  max-width: 15%;
+  max-height: 12.5%;
+  right: 50px;
+  top: 390px
 }
 
 .second-skill p {
+  position: absolute;
   float: left;
   flex-basis: 80%;
-  padding-top: 10%;
-  padding-left: 2%;
-  margin-right: 10%;
-  font-size: 1.5em;
+  font-size: 24px;
+  left: 50px;
+  top: 428px;
 }
 
 .mission {
