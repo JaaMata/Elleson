@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.1fr 1fr 1fr;
-  grid-template-areas: "nav nav nav"
+  grid-template-areas:
+    "nav nav nav"
     "title title title"
     "info info info";
   z-index: -2;
@@ -31,7 +32,6 @@ body {
 }
 
 .title img {
-  height: 100%;
   width: 100%;
   z-index: -1;
 }
@@ -52,7 +52,7 @@ body {
   top: 400px;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 28px;
   color: #F3F3F3;
 }
@@ -61,7 +61,7 @@ body {
   grid-area: info;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: .42fr .5fr;
+  grid-template-rows: .5fr .5fr;
   grid-template-areas:
     "about about"
     "skills mission"
@@ -87,79 +87,73 @@ body {
   position: absolute;
   width: 588.18px;
   top: 192px;
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 .skills {
   grid-area: skills;
-  position: relative;
   background-color: #3A3A3A;
+  display: grid;
+  grid-template-rows: .10fr .20fr .20fr;
+  grid-template-areas:
+    "title"
+    "first-skill"
+    "second-skill";
 }
 
 .skills h2 {
-  position: absolute;
-  margin-top: 20px;
-  font-size: 2.5em;
-  font-family: Roboto;
-  left: 47%;
-  right: auto;
+  font-size: 72px;
+  grid-area: title;
+  display: flex;
+  justify-content: center;
 }
 
 .first-skill {
-  display: flex;
-  align-items: center;
+  grid-area: first-skill;
+  position: relative;
 }
 
 .first-skill img {
-  position: absolute;
-  max-width: 15%;
-  max-height: 12.5%;
-  left: 50px;
-  top: 200px
+  display: inline-block;
+  width: 15%;
+  margin-left: 10%;
 }
 
 .first-skill p {
+  display: inline-block;
   position: absolute;
-  float: left;
-  flex-basis: 80%;
-  left: 236px;
-  top: 264px;
-  font-size: 24px;
+  width: 35%;
+  font-size: 1.5em;
+  bottom: 5%;
+  left: 30%;
 }
 
 .second-skill {
-  display: flex;
-  align-items: center;
+  grid-area: second-skill;
+  position: relative;
 }
 
 .second-skill img {
+  display: inline-block;
   position: absolute;
-  max-width: 15%;
-  max-height: 12.5%;
-  max-width: 15%;
-  max-height: 12.5%;
-  right: 50px;
-  top: 390px
+  width: 15%;
+  margin-right: 5%;
+  left: 70%;
 }
 
 .second-skill p {
+  display: inline-block;
   position: absolute;
-  float: left;
-  flex-basis: 80%;
-  font-size: 24px;
-  left: 50px;
-  top: 428px;
+  width: 35%;
+  font-size: 1.5em;
+  left: 35%;
 }
 
 .mission {
   position: relative;
   grid-area: mission;
-  background-color: #34656d;
-  top: 20px;
-  border-radius: 10em;
-  border-right-width: 5px;
-  margin-right: 24px;
-  margin-left: 24px;
+  background-color: #454545;
+  ;
 }
 
 .mission h2 {

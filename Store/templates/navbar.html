@@ -1,8 +1,8 @@
 {% load static %}
 <div class="nav-bar">
   <ul>
-    <li><a href="#"><img class="logo" src="{% static 'images/logo.png' %}" alt="Ellson logo"></a></li>
-    <li><a class="product" href="#">Products</a></li>
+    <li><a href="{% url 'index' %}"><img class="logo" src="{% static 'images/logo.png' %}" alt="Ellesons logo"></a></li>
+    <li><a class="product" href="{% url 'Store.products' %}">Products</a></li>
     <li class="contact">
       <a href="#">Contact Us</a>
 
