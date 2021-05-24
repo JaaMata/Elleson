@@ -25,6 +25,7 @@ class Product(models.Model):
     price = models.FloatField(null=True)
     tags = models.ManyToManyField(Tag)
     description = models.CharField(max_length=400)
+    coverImage = models.ImageField(upload_to="product/images", null=True)
 
     def __str__(self):
         return self.name
