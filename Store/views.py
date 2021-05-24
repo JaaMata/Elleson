@@ -12,7 +12,7 @@ def index(request):
 
 def product(request):
     products = Product.objects.all()
-    images = Image.objects.all()
+    images = products.Image.all()
 
     context = {"products": products, "images": images}
     return render(request, 'product.html', context)
