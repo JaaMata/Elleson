@@ -1,15 +1,27 @@
 .container {
     display: grid;
-    grid-template-rows: 1.5fr 1fr;
+    grid-template-rows: .2fr 1fr;
     grid-template-areas: 
     "nav"
-    "content"
+    "content";
+    z-index: -2;
 }
 
 .nav-bar {
     grid-area: nav;
+    background-color: white;
 }
 
 .product-list {
     grid-area: content;
+    background-color: #242424;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 
+
+}
+
+img {
+    width: 20%;
+    z-index: -1;
 }
