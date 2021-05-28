@@ -1,0 +1,86 @@
+{% load static %}
+<div class="nav-bar">
+  <ul>
+    <li>
+      <a href="{% url 'index' %}"
+        ><img
+          class="logo"
+          src="{% static 'images/logo.png' %}"
+          alt="Ellesons logo"
+      /></a>
+    </li>
+    <li><a class="product" href="{% url 'products' %}">Products</a></li>
+    <li class="contact">
+      <a href="#">Contact Us</a>
+    </li>
+  </ul>
+</div>
+<style>
+
+    .navbar {
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+.contact {
+  float: right;
+}
+
+.contact a {
+  font-size: 24px;
+  position: absolute;
+  width: 118px;
+  height: 28px;
+  right: 100px;
+  top: 58px;
+  bottom: 49px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  position: absolute;
+  width: 407px;
+  height: 94px;
+  left: 100px;
+  top: 11px;
+}
+
+.product {
+  position: absolute;
+  width: 97px;
+  height: 28px;
+  left: 607px;
+  top: 58px;
+  bottom: 49px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+
+
+</style>

@@ -1,24 +1,12 @@
-{% extends 'htmlbase.html' %} {% load static %} {% block head %}
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
 <link rel="stylesheet" href="{% static '/css/home.css' %}" />
 <title>Home</title>
-{% endblock %} {% block content %}
-<div class="nav-bar">
-  <ul>
-    <li>
-      <a href="{% url 'index' %}"
-        ><img
-          class="logo"
-          src="{% static 'images/logo.png' %}"
-          alt="Ellesons logo"
-      /></a>
-    </li>
-    <li><a class="product" href="{% url 'products' %}">Products</a></li>
-    <li class="contact">
-      <a href="#">Contact Us</a>
-    </li>
-  </ul>
-</div>
-<hr />
+{% endblock %}
+
+{% block content %}
+
 
 <div class="title">
   <img src="{% static 'images/placeholder.JPG' %}" alt="" />

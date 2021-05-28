@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    grid-template-areas: 
+    "nav"
+    "content"
+}
+
+.nav-bar {
+    grid-area: nav;
+}
+
+.product-list {
+    grid-area: content;
+}
