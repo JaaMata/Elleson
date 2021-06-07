@@ -1,18 +1,4 @@
 {% extends 'base.html' %}
-{% load static %}
-
-{% block head %}
-
-<title>Products</title>
-<link rel="stylesheet" href="{% static 'css/products.css' %}">
-{% endblock %}
-
-
 {% block content %}
-<div class="product-list">
-    {% for i in products %}
-    <h1>{{i.name}}</h1>
-    <img src="{{i.coverImage.url}}" alt="" />
-    {% endfor %}   
-</div>
-{% endblock %}  
+<h1>{{product.name}}</h1>
+{% endblock %}
