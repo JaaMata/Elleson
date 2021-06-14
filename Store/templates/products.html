@@ -12,13 +12,12 @@
 <div class="product-list">
   {% for i in products %}
   <div class="product-card">
-    <img src="{{i.coverImage.url}}" alt="" />
+    <img class="product-img" src="{{i.coverImage.url}}" alt="" />
     <div class="product-overlay">
       <a href="{% url 'product' id=i.id %}"></a>
-      <h1>{{i.name}}</h1>
+      <h2 class="name">{{i.displayName}}</h1>
     </div>
   </div>
-
   {% endfor %}
 </div>
 {% endblock %}

@@ -21,6 +21,7 @@ class Tag(models.Model):
 
 
 class Product(models.Model):
+    displayName = models.CharField(max_length=20, null=True)
     name = models.CharField(max_length=200, null=True)
     price = models.FloatField(null=True)
     tags = models.ManyToManyField(Tag)

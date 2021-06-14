@@ -20,8 +20,9 @@
   background-color: #242424;
 }
 
-img {
+.product-img {
   width: 70%;
+  border-radius: 1em;
 }
 
 .product-card {
@@ -40,6 +41,7 @@ img {
   opacity: 0;
   width: 70%;
   height: 100%;
+  transition: .5s
 }
 
 .product-overlay a {
@@ -51,6 +53,16 @@ img {
   height: 100%;
 }
 
+.name {
+  color: white;
+  font-size: 3rem;
+  overflow-wrap: normal;
+}
+
 .product-overlay:hover {
   opacity: 1;
+  transition: 1s;
 }
+
+
+2   
