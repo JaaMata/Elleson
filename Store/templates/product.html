@@ -2,12 +2,27 @@
 {% load static %}
 
 {% block head %}
-
 <title>{{product.name}}</title>
 <link rel="stylesheet" href="{% static 'css/product.css' %}">
 {% endblock %}
-
-
 {% block content %}
+<div class="main">
+  <div class="info">
+    <h1 class="product-name">{{product.name}}</h1>
+    <h2 class="product-price">£{{product.price}}</h2>
+    <p class="description">{{product.description}}</p>
+    <div class="buttons">
+      <div class="buy-btn">
+        <a href="#">Buy Now</a>
+      </div>
+      <div class="add-btn">
+        <a href="#">Add To Cart</a>
+      </div>
+    </div>
 
+  </div>
+  <img class="product-img" src="{{product.coverImage.url}}" alt="">
+</div>
+
+<div class="footer">dfsf</div>
 {% endblock %}

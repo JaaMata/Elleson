@@ -1,4 +1,101 @@
-.content {
-    display: grid;
-    
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .19fr 1fr 1fr .17fr;
+  grid-template-areas:
+    "navbar navbar"
+    "main main"
+    "spec spec"
+    "footer footer";
+}
+
+.nav-bar {
+  grid-area: navbar;
+}
+
+.main {
+  grid-area: main;
+  background-color: #242424;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "image info";
+}
+
+.info {
+  grid-area: info;
+  position: relative;
+}
+
+.product-name {
+  font-family: Roboto;
+  font-size: 4rem;
+  color: white;
+  margin-right: 10.875em;
+}
+
+.product-price {
+  font-family: Roboto;
+  font-size: 2rem;
+  color: white;
+}
+
+.description {
+  font-family: Roboto;
+  font-size: 1.25rem;
+  color: white;
+  width: 22em;
+}
+
+.product-img {
+  grid-area: image;
+  width: 36.875em;
+  border-radius: 4.5em;
+  margin-left: 9.125em;
+  margin-top: 4.5625em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.buy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10em;
+  background-color: white;
+  z-index: 2;
+  width: 15.0625em;
+  margin-right: 1em;
+}
+
+.buy-btn a {
+  font-family: Roboto;
+  font-size: 2.25rem;
+  color: black;
+}
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10em;
+  background-color: white;
+  z-index: 2;
+  width: 15.0625em;
+  margin-right: 28.5625em;
+}
+
+.add-btn a {
+  font-family: Roboto;
+  font-size: 2.25rem;
+  color: black;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #242424;
 }
